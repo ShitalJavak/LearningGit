@@ -1,0 +1,42 @@
+<form class="form-horizontal" name="modifyAccountForm" ng-init="init()">
+    <fieldset>
+        <legend>Modify Project</legend>
+        <div class="form-group">
+            <label for="accountId" class="col-lg-2 control-label">Account Id</label>
+            <div class="col-lg-10">{{existingAccount.length}}
+                <input type="text" required class="form-control" ng-model="existingAccount.accountId" readonly>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="accountName" class="col-lg-2 control-label">Account Name</label>
+            <div class="col-lg-10">
+                <input type="text" required class="form-control" ng-model="existingAccount.accountName" placeholder="Account Name">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="accountSector" class="col-lg-2 control-label">Account Sector</label>
+            <div class="col-lg-10">
+                <input type="text" required class="form-control" ng-model="existingAccount.accountSector">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="accountPal" class="col-lg-2 control-label">Account Pal</label>
+            <div class="col-lg-10">
+                <input type="text" required class="form-control" ng-model="existingAccount.accountPal">
+            </div>
+        </div>
+        <!-- <div class="form-group">
+            <label for="clientName" class="col-lg-2 control-label">Client Name</label>
+            <div class="col-lg-10">
+                <input type="text" required class="form-control" ng-model="existingAccount.clientName" placeholder="Client Name">
+            </div>
+        </div> -->
+        <div class="form-group">
+            <div class="col-lg-10 col-lg-offset-2">
+                     <a href="#!Accounts" class="btn btn-default">Cancel</a>
+            <!--     <a ng-click="modifyProject(existingAccount)" class="btn btn-primary">Modify Project</a> -->
+                 <a ng-click="modifyAccount(existingAccount)" class="btn btn-primary">Modify Account</a>
+            </div>
+        </div>
+    </fieldset>
+</form>

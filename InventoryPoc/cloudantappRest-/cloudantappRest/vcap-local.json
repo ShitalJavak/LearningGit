@@ -1,0 +1,25 @@
+{
+    "cloudantNoSQLDB": [
+        {
+            "credentials": {
+                "username": "2c2a7fac-23c7-47cd-be24-13262972aff6-bluemix",
+                "password": "895f3ba0962215e8c19776d568a7849a4b3828c73d0f3a8af8b2314c959d9876",
+                "host": "2c2a7fac-23c7-47cd-be24-13262972aff6-bluemix.cloudant.com",
+                "port": 443,
+                "url": "https://2c2a7fac-23c7-47cd-be24-13262972aff6-bluemix:895f3ba0962215e8c19776d568a7849a4b3828c73d0f3a8af8b2314c959d9876@2c2a7fac-23c7-47cd-be24-13262972aff6-bluemix.cloudant.com"
+            },
+            "syslog_drain_url": null,
+            "volume_mounts": [],
+            "label": "cloudantNoSQLDB",
+            "provider": null,
+            "plan": "Lite",
+            "name": "HertzInventoryCloudant-cloudantNoSQLDB",
+            "tags": [
+                "data_management",
+                "ibm_created",
+                "lite",
+                "ibm_dedicated_public"
+            ]
+        }
+    ]
+}

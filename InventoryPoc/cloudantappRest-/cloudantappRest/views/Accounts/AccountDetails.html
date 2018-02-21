@@ -1,0 +1,54 @@
+<h1>{{Title}}</h1>
+<h6>{{Response}}</h6>
+<hr />
+<a href="#!NewAccount" class="btn btn-primary">Add New Account</a>
+<hr />
+
+<table class="table table-striped table-hover">
+    <thead>
+        <tr class="info">
+            <td>
+                Account ID
+            </td>
+            <td>
+                Account Name
+            </td>
+            <td>
+               Account Sector
+            </td>
+            <td>
+               Account Pal
+            </td>
+           
+            <td>
+                Modify Account 
+            </td>
+            <td>
+                Delete Account
+            </td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="success" ng-repeat="acct in Accounts">
+            <td>
+                 {{acct.accountId}}  
+            </td>
+            <td>
+                {{acct.accountName}}
+            </td>
+            <td>
+               {{acct.accountSector}} 
+            </td>
+            <td>
+                {{acct.accountPal}}  
+            </td>
+           
+            <td>
+                <a href="#!ModifyAccount/{{acct._id}}" ng-click= "singleAccount({acct._id})" class="btn btn-info">Modify</a>
+            </td>
+            <td>
+                <a href="#Accounts" ng-click="deleteAccount(acct)" class="btn btn-info">Delete</a>
+            </td>
+        </tr>
+    </tbody>
+</table>

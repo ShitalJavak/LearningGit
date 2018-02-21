@@ -1,0 +1,13 @@
+---
+applications:
+- path: .
+  memory: 256M
+  instances: 1
+  domain: mybluemix.net
+  name: AccountInventory
+  host: AccountInventory
+  disk_quota: 1024M
+  env:
+    a: a
+  services:
+  - HertzInventoryCloudant-cloudantNoSQLDB
