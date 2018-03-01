@@ -1,0 +1,82 @@
+ <div ng-include="'Main/Header.html'"></div>  
+      <form  name="accountForm">
+      <div class="main-content">
+         <div class="container">
+            <div class="page-title">
+               <h3>Modify Tower</h3>
+            </div>
+            <div class="clearfix"></div>
+            <div class="col-md-12 content-holder">
+               <div class="row pt-24">
+                  <div class="col-md-4 pt-12">
+                     <div class="form-group">
+                        <label for="towerId" class="manditory">Tower Id</label>
+        		 			<input type="text" required class="form-control" ng-model="existingTower.towerId" readonly>
+                     </div>
+                  </div>
+                  <div class="col-md-4 pt-12">
+                     <div class="form-group">
+                        <label for="towerAccountId" class="manditory" >Tower Account ID</label>
+                  <input type="text" required class="form-control" ng-model="existingTower.towerAccountId" placeholder="Tower Account ID">
+         		
+         			</div>
+                  </div>
+                  <div class="col-md-4 pt-12">
+                     <div class="form-group">
+                        <label for="towerName" class="manditory">Tower Name</label>
+        		              <input type="text" required class="form-control" ng-model="existingTower.towerName">
+                     </div>
+                  </div>
+                
+               </div>
+               <div class="row">
+                  <div class="col-md-4 pt-12">
+                     <div class="form-group">
+                        <label for="towerDMName" class="manditory">DM Name</label>
+        		              <input type="text" required class="form-control" ng-model="existingTower.towerDMName">
+                     </div>
+                  </div>
+                  <div class="col-md-4 pt-12">
+                     <div class="form-group">
+                        <label for="towerDMEmail" class="manditory">DM Email</label>
+                            <input type="text" required class="form-control" ng-model="existingTower.towerDMEmail">
+       				 </div>
+                  </div>
+                  <div class="col-md-4 pt-12">
+                     <div class="form-group">
+                        <label for="towerTeam" class="manditory">Team</label>
+                            <input type="text" required class="form-control" ng-model="existingTower.towerTeam">
+          		 </div>
+                  </div>
+                 
+               </div>
+               <div class="row">
+                  <div class="col-md-4 pt-12">
+                     <div class="form-group">
+                        <label for="towerCreatedBy" class="manditory">Created By</label>
+        		                  <input type="text" required class="form-control" ng-model="existingTower.towerCreatedBy">
+                     </div>
+                  </div>
+                  <div class="col-md-4 pt-12">
+                     <div class="form-group">
+               	 </div>
+                  </div>
+                  <div class="col-md-4 pt-12">
+                     <div class="form-group">
+                 </div>
+                  </div>
+                 
+               </div>
+         
+               <div class="row">
+                  <div class="col-md-12 pt-24 text-right">
+                      <a href="#Towers" class="btn btn-danger">Cancel</a>
+                       <a ng-click="modifyTower(existingTower)"  class="btn btn-blue">Modify Tower</a>
+                  
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      </form>
+    <div ng-include="'Main/Footer.html'">

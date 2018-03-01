@@ -1,0 +1,87 @@
+ <div ng-include="'Main/Header.html'"></div>  
+      <form  name="accountForm">
+      <div class="main-content">
+         <div class="container">
+            <div class="page-title">
+               <h3>Add Tower</h3>
+            </div>
+            <div class="clearfix"></div>
+            <div class="col-md-12 content-holder">
+               <div class="row pt-24">
+                  <div class="col-md-4 pt-12">
+                     <div class="form-group">
+                        <label for="towerId" class="manditory">Tower ID</label>
+        		            <input type="text" required class="form-control" ng-model="tower.towerId" placeholder="Tower ID">
+                     </div>
+                  </div>
+                  <div class="col-md-4 pt-12">
+                     <div class="form-group">
+                        <label for="towerAccountId" class="manditory" >Tower Account ID</label>
+                     <select name="towerAccountId"  class="form-control">
+                                                        <option value="MH">MH</option>
+                                                        <option value="AP">AP</option>
+                                                        <option value="Odisha">Odisha</option>
+                                                        <option value="Gujrat">Gujrat</option>
+                                                </select>
+         		
+         			</div>
+                  </div>
+                  <div class="col-md-4 pt-12">
+                     <div class="form-group">
+                        <label for="towerName" class="manditory">Tower Name</label>
+        		            <input type="text" required class="form-control" ng-model="tower.towerName" placeholder="Tower Name">
+                     </div>
+                  </div>
+                
+               </div>
+               <div class="row">
+                  <div class="col-md-4 pt-12">
+                     <div class="form-group">
+                        <label for="towerDMName" class="manditory">DM Name</label>
+        		             <input type="text" required class="form-control" ng-model="tower.towerDMName" placeholder="DM Name">
+                     </div>
+                  </div>
+                  <div class="col-md-4 pt-12">
+                     <div class="form-group">
+                        <label for="towerDMEmail" class="manditory">DM Email</label>
+                           <input type="text" required class="form-control" ng-model="tower.towerDMEmail" placeholder="DM Email">
+       				 </div>
+                  </div>
+                  <div class="col-md-4 pt-12">
+                     <div class="form-group">
+                        <label for="towerTeam" class="manditory">Team</label>
+                                <input type="text" required class="form-control" ng-model="tower.towerTeam" placeholder="Team">
+          		 </div>
+                  </div>
+                 
+               </div>
+               <div class="row">
+                  <div class="col-md-4 pt-12">
+                     <div class="form-group">
+                        <label for="towerCreatedBy" class="manditory">Created By</label>
+        		                  <input type="text" required class="form-control" ng-model="tower.towerCreatedBy" placeholder="CreatedBy">
+                     </div>
+                  </div>
+                  <div class="col-md-4 pt-12">
+                     <div class="form-group">
+               	 </div>
+                  </div>
+                  <div class="col-md-4 pt-12">
+                     <div class="form-group">
+                 </div>
+                  </div>
+                 
+               </div>
+         
+               <div class="row">
+                  <div class="col-md-12 pt-24 text-right">
+                      <a href="#Towers" class="btn btn-danger">Cancel</a>
+                       <a ng-click="insertTower(tower)"  class="btn btn-blue">Insert Tower</a>
+                  
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      </form>
+    <div ng-include="'Main/Footer.html'">

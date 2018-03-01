@@ -1,0 +1,138 @@
+ <header>
+         <div class="header_content" >
+            <div class=" top-bar">
+               <div class="container" >
+                  <div class="row">
+                     <div class="col-md-12 col-xs-12 no-padding">
+                        <div class="col-lg-4 col-md-4 col-sm-6  col-xs-6 pull-left"> <img src="" class="img-responsive logo" alt="" /> </div> <!-- LOgo -->
+                        <div class="col-lg-4 col-md-4 col-sm-6  col-xs-6 pull-right text-right">
+                           <!--User Header-->
+                           <div class="header-user-info">
+                              <li class="dropdown">
+                                 <a href="#" class="dropdown-toggle profile-image" data-toggle="dropdown">
+                                 <span class="hidden-xs">Welcome, John <!-- <b class="caret"></b></span><img src="" class="img-circle  special-img"> --> </a> <!-- User photo -->
+                                 <div class="dropdown-menu">
+                                    <div class="dropdown-header">
+                                       <div><img src="" class="img-circle  special-img"></div>
+                                       <div>
+                                          <p>USER NAME</p>
+                                          <span>EMAIL</span>
+                                       </div>
+                                    </div>
+                                   <!--  <div class="divider"></div>
+                                    <div><a href="UserProfile.html"><i class="fa fa-user"></i> User Profile</a></div>
+                                    <div class="divider"></div>
+                                    <div><a href="#"><i class="fa fa-cog"></i> Settings</a></div>
+                                    <div class="header-sub-menu"><a href="#"><i class="fa fa-key"></i>Change Password</a></div>
+                                    <div class="divider"></div>
+                                    <div><a href="login.html"><i class="fa fa-sign-out"></i> Log-out</a></div> -->
+                                 </div>
+                              </li>
+                           </div>
+                           <!--User Header-->
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!--NAVBAR-->
+         <div class="navbar-wrap">
+            <div class="navbar navbar-default navbar-inverse" role="navigation">
+               <div class="container">
+                  <div class="navbar-header">
+                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                     <span class="sr-only">Toggle navigation</span>
+                     <span class="icon-bar"></span>
+                     <span class="icon-bar"></span>
+                     <span class="icon-bar"></span>
+                     </button>
+                  </div>
+                  <div class="collapse navbar-collapse">
+                     <ul class="nav navbar-nav">
+                        <li   class="active"><a href="#!Accounts"><i class="fa fa-building-o" aria-hidden="true"></i>Accounts</a></li>
+                        <li><a href="#"><i></i> Towers</a></li>
+                        <li><a href="#"><i></i> Application</a></li>
+                        <li><a href="#"><i></i> Team</a></li>
+                     </ul>
+                  </div>
+                  <!--/.nav-collapse -->
+               </div>
+            </div>
+         </div>
+         <!--NAVBAR-->
+      </header>
+
+        <div class="main-content">
+         <div class="container">
+            <div class="page-title">
+               <h3>Accounts</h3>
+            </div>
+            <div class="clearfix"></div>
+            <div class="col-md-12 content-holder">
+               <div class="row">
+                  <div class="col-md-12 pt-24 no-padding">
+                     <div class="col-md-6 col-sm-6 col-xs-12">
+                        <div class="input-group">
+                           <!-- <input type="text" class="form-control" id="search" placeholder="Search"> -->
+                           <div class="input-group-btn">
+                              <!-- <button class="btn btn-default" type="submit">
+                              <i class="glyphicon glyphicon-search"></i>
+                              </button> -->
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-md-6 col-sm-6 col-xs-12 text-right table-button-div">
+                        <a href="#NewAccount" class="btn btn-primary btn-blue">Add Account</a>
+                     </div>
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="col-md-12 pt-12">
+                     <div class="table-responsive">
+                        <table class="table table-striped table-hover table-bordered text-center">
+                           <thead>
+                              <tr>
+                                 <th class="text-center">ACCOUNT ID</th>
+                                 <th class="text-center">ACCOUNT NAME</th>
+                                 <th class="text-center">SECTOR</th>
+                                 <th class="text-center">PAL</th>
+                                 <th class="text-center">MODIFIED BY</th>
+                                 <th class="text-center" colspan="2">ACTIONS</th>
+                              </tr>
+                           </thead>
+                           <tbody>
+                              
+                              <tr ng-repeat="acct in Accounts | orderBy : accountId">
+                                 <td>   {{acct.accountId}}  </td>
+                                 <td>  {{acct.accountName}}</td>
+                                 <td> {{acct.accountSector}} </td>
+                                 <td> {{acct.accountPal}}  </td>
+                                 <td>DATE</td>
+                                 <td> <a href="#ModifyAccount/{{acct._id}}" ng-click= "singleAccount({acct._id})" class="btn btn-info">Modify</a><a href="#ModifyAccount/{{acct._id}}" ng-click= "singleAccount({acct._id})" data-toggle="tooltip" title="Edit  Account"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a></td>
+                                 <td> <a href="#Accounts" ng-click="deleteAccount(acct)" class="btn btn-info">Delete</a><a href="#Accounts"  ng-click="deleteAccount(acct)" data-toggle="tooltip" title="Delete This Account"><i class="fa fa-trash-o" aria-hidden="true"></i></a></td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </div>
+                    <!--  <ul class="pagination pull-right">
+                        <li class="disabled"><a href="#"><i class="fa fa-angle-double-left" aria-hidden="true"></i> Prev</a></li>
+                        <li  class="active"><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li><a href="#">Next <i class="fa fa-angle-double-right" aria-hidden="true"></i></a></li>
+                     </ul> -->
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- FOOTER START -->
+       <footer>
+         <div >
+           
+         </div>
+      </footer>
+      <!-- FOOTER END -->

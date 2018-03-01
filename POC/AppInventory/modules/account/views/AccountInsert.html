@@ -1,0 +1,41 @@
+<form class="form-horizontal" name="insertEmployeeForm">
+    <fieldset>
+        <legend>Insert New Account</legend>
+        <div class="form-group">
+            <label for="accountName" class="col-lg-2 control-label">Account Name</label>
+            <div class="col-lg-10">
+                <input type="text" required class="form-control" ng-model="account.accountName" placeholder="Account Name">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="accountId" class="col-lg-2 control-label">Account Id</label>
+            <div class="col-lg-10">
+                <input type="text" required class="form-control" ng-model="account.accountId">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="accountSector" class="col-lg-2 control-label">Account Sector</label>
+            <div class="col-lg-10">
+                <input type="text" required class="form-control" ng-model="account.accountSector">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="AccountPal" class="col-lg-2 control-label">Account Pal</label>
+            <div class="col-lg-10">
+                <input type="text" required class="form-control" ng-model="account.accountPal" placeholder="PAL Name">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="AccountPal" class="col-lg-2 control-label">Account Status</label>
+            <div class="col-lg-10">
+                <input type="text" required class="form-control" ng-model="account.status" placeholder="Status">
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-lg-10 col-lg-offset-2">
+                <a href="#Accounts" class="btn btn-default">Cancel</a>
+                <a ng-click="insertAccount(account)" class="btn btn-primary">Insert Account</a>
+            </div>
+        </div>
+    </fieldset>
+</form>
