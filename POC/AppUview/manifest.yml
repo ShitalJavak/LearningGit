@@ -1,0 +1,8 @@
+applications:
+- memory: 256M
+  instances: 1
+  domain: mybluemix.net
+  name: ApplicationInsightNew
+  host: ApplicationInsightNew
+  disk_quota: 1024M
+ 

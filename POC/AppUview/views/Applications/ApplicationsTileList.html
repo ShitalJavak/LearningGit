@@ -1,0 +1,91 @@
+
+<!-- Custom styles for this template -->
+<link href="../../css/creative.min.css" rel="stylesheet">
+
+
+<!-- Navigation -->
+<nav
+	class="navbar navbar-expand-lg navbar-light fixed-top navbar-shrink"
+	id="mainNav">
+	<div class="container-fluid">
+		<h3 class="application-name">STRATEGIC APPLICATION INSIGHT</h3>
+		<button class="navbar-toggler navbar-toggler-right" type="button"
+			data-toggle="collapse" data-target="#navbarResponsive"
+			aria-controls="navbarResponsive" aria-expanded="false"
+			aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarResponsive">
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item"><a class="nav-link js-scroll-trigger"
+					href="#"></a></li>
+				<li class="nav-item"><a  class="nav-link js-scroll-trigger" href="http://strategicapp.mybluemix.net/#/dashboard/applications" >Admin view</a></li>
+				<li class="nav-item"><p class="nav-link js-scroll-trigger"
+					>Welcome {{user}} !</p></li>
+				<li class="nav-item"><a class="nav-link js-scroll-trigger"
+					href="#" ng-click="logout()"><i class="fa fa-sign-out"></i>  Logout</a>
+					
+					
+					</li>
+			</ul>
+		</div>
+	</div>
+</nav>
+
+<section class="bg-primary" id="services">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12 text-center">
+				<h2 class="section-heading">
+					<div style="height: 305px">
+						<div id="slides_control">
+							<div>
+								<carousel interval="myInterval"> <slide
+									ng-repeat="slide in applications" active="slide.active"> <img
+									ng-src="{{slide.src}}">
+								<div class="carousel-caption">
+									<!--  <h4>Slide {{$index+1}}</h4> -->
+								</div>
+								</slide> </carousel>
+							</div>
+						</div>
+					</div>
+				</h2>
+				<div class="col-lg-10 mx-auto">
+					<h4 class="text-uppercase">
+						<strong>Applications</strong>
+					</h4>
+					<hr>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="row">
+			<!--      <div class="col-lg-3 col-md-6 text-center" ng-repeat="account in accounts" >
+            <div class="service-box mt-5 mx-auto">
+             <img ng-src="{{account.src}}"  width="70" height="70"> 
+              <i class="fa fa-4x fa-diamond text-primary mb-3 sr-icons"></i>
+              
+              <h3 class="mb-3">{{account.accountName}}</h3>
+              <p class="text-muted mb-0">{{account.accountName}}</p>
+            </div>
+          </div>  -->
+			<div class="col-lg-3 col-md-6 text-center"
+				ng-repeat="application in applications">
+				<div class="service-box mt-5 mx-auto">
+					<!-- <i class="fa fa-4x fa-newspaper-o text-primary mb-3 sr-icons"></i> -->
+					<a href="#!applicationDetails/{{application.applicationId}}" ng-click=""> <img
+						class="account-shape" ng-src="{{application.src}}" width="40"
+						height="40">
+					</a>
+					<h3 class="mb-3">{{application.name}}</h3>
+					<p class="text-muted mb-0">{{application.desc}}</p>
+				</div>
+			</div>
+
+
+		</div>
+</section>
+
+

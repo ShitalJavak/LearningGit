@@ -1,0 +1,79 @@
+<div ng-include="'Main/Header.html'"></div>
+ <form  name="" ng-init="init()">
+<section class="bg-primary" id="services">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12 text-center">
+
+				<div class="container" ng-repeat="appGroup in appGroups">
+					
+				<table style="width:100%">
+    				<tr>
+    				<td style="width:40%"> 
+						<div style="height: 305px" >
+							<img ng-src="{{appGroup.src}}">
+						</div>
+				    </td>
+				    <td style="width:10%"> 
+						
+				    </td>
+				 	 <td style="width:50%" >
+				 		<table style="width:100%;height:200%">
+					 		<tr style="valign:middle">
+					 		<td><h4 class="mb-3 text-left">Application Group </h4></td><td><p class="text-muted mb-0 text-left">{{appGroup.name}}</p></td>
+					 		</tr>
+					 			<tr style="valign:middle">
+					 	<td>	<h4 class="mb-3 text-left">Description </h4></td><td valign="middle"><p class="text-muted mb-0 text-left">{{appGroup.desc}} </p></td>
+					 		</tr>
+					 			<tr style="valign:middle"><td>
+					 		<h4 class="mb-3 text-left">Lead name</h4></td><td valign="middle" class="text-muted mb-0 text-left">{{appGroup.LeadName}}</td></tr>
+					 		
+					 			<tr style="valign:middle"><td>
+					 		<h4 class="mb-3 text-left" >Lead email</h4></td><td valign="middle" class="text-muted mb-0 text-left">{{appGroup.teamLeadEmail}}</td></tr>
+					 		</tr>	<tr style="valign:middle"><td>
+					 		<h4 class="mb-3 text-left" >Lead Phone no </h4></td><td valign="middle"><p class="text-muted mb-0 text-left">{{appGroup.LeadPhone}}  </p></td>
+					 		</tr> 
+					 		<!-- <tr style="valign:middle"><td>
+					 		<h4 class="mb-3 text-left" >PAL Email </h4></td><td><p class="text-muted mb-0 text-left">{{appGroup.palEmail}} </p></td>
+					 		</tr>  -->
+					 		<tr style="valign:middle"><td>
+					 		<h4 class="mb-3 text-left" ></h4></td><td><p class="text-muted mb-0 text-left "></p></td>
+					 		</tr> 
+				 		</table>
+					 </td>
+				 </tr>
+			   </table> 
+				</div>
+				
+				<div class="col-lg-10 mx-auto">
+					<h4 class="text-uppercase">
+						<strong>Applications</strong>
+					</h4>
+					<hr>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="row">
+
+			<div class="col-lg-3 col-md-6 text-center"
+				ng-repeat="application in applications">
+				<div class="service-box mt-5 mx-auto">
+					<!-- <i class="fa fa-4x fa-newspaper-o text-primary mb-3 sr-icons"></i> -->
+					<a href="#!applicationDetails/{{application.applicationId}}" ng-click=""> <img
+						class="account-shape" ng-src="{{application.src}}" width="40"
+						height="40">
+					</a>
+					<h3 class="mb-3">{{application.name}}</h3>
+					<p class="text-muted mb-0">{{application.desc}}</p>
+				</div>
+			</div>
+
+
+		</div>
+</section>
+</form>
+
+
+

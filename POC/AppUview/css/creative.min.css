@@ -1,0 +1,544 @@
+body, html {
+	width: 100%;
+	height: 100%
+}
+
+body {
+	font-family: Merriweather, 'Helvetica Neue', Arial, sans-serif
+}
+
+hr {
+	max-width: 50px;
+	border-width: 3px;
+	border-color: #f05f40
+}
+
+hr.light {
+	border-color: #fff
+}
+
+a {
+	color: #f05f40;
+	-webkit-transition: all .2s;
+	-moz-transition: all .2s;
+	transition: all .2s
+}
+
+a:hover {
+	color: #f05f40
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif
+}
+
+.bg-primary {
+	background-color: #ffffff!important
+}
+<!-- mychange : orange to white -->
+.bg-dark {
+	background-color: #212529 !important
+}
+
+.text-faded {
+	color: rgba(255, 255, 255, .7)
+}
+
+section {
+	padding: 8rem 0
+}
+
+.section-heading {
+	margin-top: 0
+}
+
+::-moz-selection {
+	color: #fff;
+	background: #212529;
+	text-shadow: none
+}
+
+::selection {
+	color: #fff;
+	background: #212529;
+	text-shadow: none
+}
+
+img::selection {
+	color: #fff;
+	background: 0 0
+}
+
+img::-moz-selection {
+	color: #fff;
+	background: 0 0
+}
+
+#mainNav {
+	border-bottom: 1px solid rgba(33, 37, 41, .1);
+	background-color: #fff;
+	font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+	-webkit-transition: all .2s;
+	-moz-transition: all .2s;
+	transition: all .2s
+}
+
+#mainNav .navbar-brand {
+	font-weight: 700;
+	text-transform: uppercase;
+	color: #f05f40;
+	font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif
+}
+
+#mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
+	color: #f05f40
+}
+
+#mainNav .navbar-nav>li.nav-item>a.nav-link, #mainNav .navbar-nav>li.nav-item>a.nav-link:focus
+	{
+	font-size: .9rem;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: #212529
+}
+
+#mainNav .navbar-nav>li.nav-item>a.nav-link:focus:hover, #mainNav .navbar-nav>li.nav-item>a.nav-link:hover
+	{
+	color: #f05f40
+}
+
+#mainNav .navbar-nav>li.nav-item>a.nav-link.active, #mainNav .navbar-nav>li.nav-item>a.nav-link:focus.active
+	{
+	color: #f05f40 !important;
+	background-color: transparent
+}
+
+#mainNav .navbar-nav>li.nav-item>a.nav-link.active:hover, #mainNav .navbar-nav>li.nav-item>a.nav-link:focus.active:hover
+	{
+	background-color: transparent
+}
+
+@media ( min-width :992px) {
+	#mainNav {
+		border-color: transparent;
+		background-color: transparent
+	}
+	#mainNav .navbar-brand {
+		color:  #f05f40   <!-- mychange : orange to gray  rgba(255, 255, 255, .7) -->
+	}
+	#mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
+		color: #fff
+	}
+	#mainNav .navbar-nav>li.nav-item>a.nav-link {
+		padding: .5rem 1rem
+	}
+	#mainNav .navbar-nav>li.nav-item>a.nav-link, #mainNav .navbar-nav>li.nav-item>a.nav-link:focus
+		{
+		color: rgba(255, 255, 255, .7)
+	}
+	#mainNav .navbar-nav>li.nav-item>a.nav-link:focus:hover, #mainNav .navbar-nav>li.nav-item>a.nav-link:hover
+		{
+		color: #fff
+	}
+	#mainNav.navbar-shrink {
+		border-bottom: 1px solid rgba(33, 37, 41, .1);
+		background-color: #fff
+	}
+	#mainNav.navbar-shrink .navbar-brand {
+		color: #414141 <!-- mychange : orange to black>
+	}
+	#mainNav.navbar-shrink .navbar-brand:focus, #mainNav.navbar-shrink .navbar-brand:hover
+		{
+		color: #f05f40
+	}
+	#mainNav.navbar-shrink .navbar-nav>li.nav-item>a.nav-link, #mainNav.navbar-shrink .navbar-nav>li.nav-item>a.nav-link:focus
+		{
+		color: #212529
+	}
+	#mainNav.navbar-shrink .navbar-nav>li.nav-item>a.nav-link:focus:hover,
+		#mainNav.navbar-shrink .navbar-nav>li.nav-item>a.nav-link:hover {
+		color: #f05f40
+	}
+}
+
+header.masthead {
+	padding-top: 10rem;
+	padding-bottom: calc(10rem - 56px);
+	background-image: url(../img/header.jpg);
+	background-position: center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover
+}
+
+header.masthead hr {
+	margin-top: 30px;
+	margin-bottom: 30px
+}
+
+header.masthead h1 {
+	font-size: 2rem
+}
+
+header.masthead p {
+	font-weight: 300
+}
+
+@media ( min-width :768px) {
+	header.masthead p {
+		font-size: 1.15rem
+	}
+}
+
+@media ( min-width :992px) {
+	header.masthead {
+		height: 100vh;
+		min-height: 650px;
+		padding-top: 0;
+		padding-bottom: 0
+	}
+	header.masthead h1 {
+		font-size: 3rem
+	}
+}
+
+@media ( min-width :1200px) {
+	header.masthead h1 {
+		font-size: 4rem
+	}
+}
+
+.service-box {
+	max-width: 400px
+}
+
+.portfolio-box {
+	position: relative;
+	display: block;
+	max-width: 650px;
+	margin: 0 auto
+}
+
+.portfolio-box .portfolio-box-caption {
+	position: absolute;
+	bottom: 0;
+	display: block;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	opacity: 0;
+	color: #fff;
+	background: rgba(240, 95, 64, .9);
+	-webkit-transition: all .2s;
+	-moz-transition: all .2s;
+	transition: all .2s
+}
+
+.portfolio-box .portfolio-box-caption .portfolio-box-caption-content {
+	position: absolute;
+	top: 50%;
+	width: 100%;
+	transform: translateY(-50%);
+	text-align: center
+}
+
+.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category,
+	.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name
+	{
+	padding: 0 15px;
+	font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif
+}
+
+.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category
+	{
+	font-size: 14px;
+	font-weight: 600;
+	text-transform: uppercase
+}
+
+.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name
+	{
+	font-size: 18px
+}
+
+.portfolio-box:hover .portfolio-box-caption {
+	opacity: 1
+}
+
+.portfolio-box:focus {
+	outline: 0
+}
+
+@media ( min-width :768px) {
+	.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category
+		{
+		font-size: 16px
+	}
+	.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name
+		{
+		font-size: 22px
+	}
+}
+
+.text-primary {
+	color: #f05f40 !important
+}
+
+.btn {
+	font-weight: 700;
+	text-transform: uppercase;
+	border: none;
+	border-radius: 300px;
+	font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif
+}
+
+.btn-xl {
+	padding: 1rem 2rem
+}
+
+.btn-primary {
+	background-color: #f05f40;
+	border-color: #f05f40
+}
+
+.btn-primary:active, .btn-primary:focus, .btn-primary:hover {
+	color: #fff;
+	background-color: #ee4b28 !important
+}
+
+.btn-primary:active, .btn-primary:focus {
+	box-shadow: 0 0 0 .2rem rgba(240, 95, 64, .5) !important
+}
+
+<!-- Added for slide show -->
+#slides_control > div{
+  height: 200px;
+}
+img{
+  margin:auto;
+  width: 400px;
+  height: 250px;
+ }
+#slides_control {
+  position:absolute;
+  width: 400px;
+  left:50%;
+  top:20px;
+ margin-left:-200px;
+} 
+
+
+.carousel {
+	position: relative
+}
+
+.carousel-inner {
+	position: relative;
+	overflow: hidden;
+	width: 100%
+}
+
+.carousel-inner>.item {
+	display: none;
+	position: relative;
+	-webkit-transition: .6s ease-in-out left;
+	transition: .6s ease-in-out left
+}
+
+.carousel-inner>.item>img, .carousel-inner>.item>a>img {
+	line-height: 1
+}
+
+.carousel-inner>.active, .carousel-inner>.next, .carousel-inner>.prev {
+	display: block
+}
+
+.carousel-inner>.active {
+	left: 0
+}
+
+.carousel-inner>.next, .carousel-inner>.prev {
+	position: absolute;
+	top: 0;
+	width: 100%
+}
+
+.carousel-inner>.next {
+	left: 100%
+}
+
+.carousel-inner>.prev {
+	left: -100%
+}
+
+.carousel-inner>.next.left, .carousel-inner>.prev.right {
+	left: 0
+}
+
+.carousel-inner>.active.left {
+	left: -100%
+}
+
+.carousel-inner>.active.right {
+	left: 100%
+}
+
+.carousel-control {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	width: 15%;
+	opacity: 0.5;
+	filter: alpha(opacity = 50);
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6)
+}
+
+/* .carousel-control.left {
+	background-image: -webkit-linear-gradient(left, color-stop(rgba(0, 0, 0, 0.5)
+		0), color-stop(rgba(0, 0, 0, 0.0001) 100%));
+	background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5) 0,
+		rgba(0, 0, 0, 0.0001) 100%);
+	background-repeat: repeat-x;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000',
+		endColorstr='#00000000', GradientType=1)
+}
+
+.carousel-control.right {
+	left: auto;
+	right: 0;
+	background-image: -webkit-linear-gradient(left, color-stop(rgba(0, 0, 0, 0.0001)
+		0), color-stop(rgba(0, 0, 0, 0.5) 100%));
+	background-image: linear-gradient(to right, rgba(0, 0, 0, 0.0001) 0,
+		rgba(0, 0, 0, 0.5) 100%);
+	background-repeat: repeat-x;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000',
+		endColorstr='#80000000', GradientType=1)
+} */
+
+.carousel-control:hover, .carousel-control:focus {
+	outline: none;
+	color: #ffffff;
+	text-decoration: none;
+	opacity: 0.9;
+	filter: alpha(opacity = 90)
+}
+
+.carousel-control .icon-prev, .carousel-control .icon-next,
+	.carousel-control .glyphicon-chevron-left, .carousel-control .glyphicon-chevron-right
+	{
+	position: absolute;
+	top: 50%;
+	z-index: 5;
+	display: inline-block
+}
+
+.carousel-control .icon-prev, .carousel-control .glyphicon-chevron-left
+	{
+	left: 50%
+}
+
+.carousel-control .icon-next, .carousel-control .glyphicon-chevron-right
+	{
+	right: 50%
+}
+
+.carousel-control .icon-prev, .carousel-control .icon-next {
+	width: 20px;
+	height: 20px;
+	margin-top: -10px;
+	margin-left: -10px;
+	font-family: serif
+}
+
+.carousel-control .icon-prev:before {
+	content: '\2039'
+}
+
+.carousel-control .icon-next:before {
+	content: '\203a'
+}
+
+.carousel-indicators {
+	position: absolute;
+	bottom: 10px;
+	left: 50%;
+	z-index: 15;
+	width: 60%;
+	margin-left: -30%;
+	padding-left: 0;
+	list-style: none;
+	text-align: center
+}
+
+.carousel-indicators li {
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	margin: 1px;
+	text-indent: -999px;
+	border: 1px solid #ffffff;
+	border-radius: 10px;
+	cursor: pointer;
+	background-color: #000 \9;
+	background-color: rgba(0, 0, 0, 0)
+}
+
+.carousel-indicators .active {
+	margin: 0;
+	width: 12px;
+	height: 12px;
+	background-color: #ffffff
+}
+
+.carousel-caption {
+	position: absolute;
+	left: 15%;
+	right: 15%;
+	bottom: 20px;
+	z-index: 10;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	color: #ffffff;
+	text-align: center;
+	text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6)
+}
+
+.carousel-caption .btn {
+	text-shadow: none
+}
+
+@media screen and (min-width:768px) {
+	.carousel-control .glyphicon-chevron-left, .carousel-control .glyphicon-chevron-right,
+		.carousel-control .icon-prev, .carousel-control .icon-next {
+		width: 30px;
+		height: 30px;
+		margin-top: -15px;
+		margin-left: -15px;
+		font-size: 30px
+	}
+	.carousel-caption {
+		left: 20%;
+		right: 20%;
+		padding-bottom: 30px
+	}
+	.carousel-indicators {
+		bottom: 20px
+	}
+}
+
+
+.account-shape{
+    border-radius: 8px;
+    width: 100px;
+		height: 100px
+}
+
+.application-name {
+	color: #4d4d4d;
+	font-weight: 700;
+}

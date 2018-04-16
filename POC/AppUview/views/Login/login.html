@@ -1,0 +1,72 @@
+
+ 
+
+    <!-- Custom styles for this template -->
+    <link href="../../css/creative.min.css" rel="stylesheet">
+    <link href="../../css/creative.css" rel="stylesheet">
+
+     		<header class="masthead text-center text-white d-flex">
+      <!-- <div class="container my-auto"> --><div>
+      <div class="header-space" ></div>
+      <div class="row" style="height: 50px"></div>
+      
+        <div class="row">
+          <div class="col-lg-10 mx-auto">
+            <h1 class="text-uppercase">
+              <strong>Strategic Application Insight</strong>
+            </h1>
+          </div>
+       
+          <div class="row">
+          
+	          <div class="col-lg-8 mx-auto">
+	           <div  style="height: 50px"></div>
+			            <p class="text-faded mb-5">One stop solution to develop application modernization strategy by deep analysis of application related information from end-user and technology perspective!</p>
+			    </div>
+			      <div  style="height: 50px"></div>
+			    <div class="col-lg-12 mx-auto">
+			            <form name="form" ng-init="" ng-submit="login()" role="form">
+				            	<div class="row">
+				           				<div class="col-lg-8 mx-auto test-color:orange">
+						            			<div ng-show="error"  class="text-faded mb-5">{{error}}</div> 
+			       
+						           		 </div>
+					           </div>
+					         <div class="row">
+				           				<div class="col-lg-8 mx-auto">
+						            			<label for="username">Username</label>
+						            			<input type="text" name="username" id="username"  ng-model="username" required />
+						           		 </div>
+					           </div>
+					         
+						         <div class="row">
+				           				<div class="col-lg-8 mx-auto">
+						            			<label for="password">Password</label>
+						            			<input type="password" name="password" id="password"  ng-model="password" required />
+						           		 </div>
+					           </div>
+					          
+					   <!--        <div class="row">
+				           				<div class="col-lg-8 mx-auto">
+				           						<label for="role">Role</label>
+				           						<select ng-model="role" ng-options="v.Id  for v in rolesList">
+					          						
+					         				 	</select>
+					           				</div>
+				           		</div> -->	
+				           		 <div  style="height: 20px"></div>	
+					          	<div class="row">
+					          	<div class="col-lg-12 mx-auto">
+								<button type="submit" ng-disabled="form.$invalid || dataLoading" class="btn btn-primary btn-blue-login">Login</button>
+								</div>
+								</div>
+								
+			            </form>
+			            
+	          </div>
+        </div>
+      </div>
+    </header>
+     		
+
+
